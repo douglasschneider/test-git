@@ -1,12 +1,10 @@
 #include <iostream>
+#include "idade.h"
 
-using namespace std;
+Idade::Idade(){ }
 
-int main() {
-	int idade;
-	cout << "Digite sua idade: ";
-	cin >> idade;
-	cout << "Você tem " << idade << " anos de idade." << endl;
+int Idade::getIdade() { return idade; }
 
-	return 0;
+void Idade::setIdade(int ida) {
+	if (ida > 0) { idade = ida; }
 }
