@@ -11,7 +11,9 @@ int main() {
 	cin >> idade;
 	idadePessoa.setIdade(idade);
 
-	cout << "Você tem " << idadePessoa.getIdade() << " anos de idade." << endl;
+	if(idadePessoa.getIdade() > 0) {
+		cout << "Você tem " << idadePessoa.getIdade() << " anos de idade." << endl;
+	}
 
 	return 0;
 }
